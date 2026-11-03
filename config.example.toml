@@ -1,0 +1,18 @@
+# Copy outside the repository, or use `tum-moodle-sync init`.
+# TOML single-quoted strings preserve Windows backslashes.
+# Replace the drive/path with the location shown in Google Drive for desktop.
+output_dir = 'G:\My Drive\TUM Moodle'
+# Optional: defaults to the current user's LOCALAPPDATA on Windows.
+# Keep state OUTSIDE Drive, OneDrive, Dropbox and your Git checkout.
+# state_dir = 'C:\Users\YOUR_NAME\AppData\Local\tum-moodle-drive-sync'
+
+# Run `tum-moodle-sync courses` after login, then select numeric course IDs.
+# Empty means sync refuses to run; it never implicitly selects every course.
+course_ids = []
+request_interval = 1.0
+retries = 3
+timeout = 60.0
+revalidate_hours = 24.0
+max_file_mb = 512
+# Optional installed browser. Omit to use Playwright's Chromium.
+# browser_channel = 'msedge'
