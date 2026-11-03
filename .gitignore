@@ -218,3 +218,49 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Private application configuration and authentication state
+config.toml
+config.local.*
+.env.*
+!.env.example
+!config.example.toml
+session.bin
+session-*.tmp
+*storage_state*.json
+*storage-state*.json
+*cookies*.json
+*cookies*.txt
+cookie.txt
+credentials*.json
+client_secret*.json
+token*.json
+.auth/
+playwright/.auth/
+browser-profile/
+state/
+.sync-state/
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db-*
+sync.lock
+*.part
+changelog-*.txt
+
+# Course materials: keep output outside this checkout
+materials/
+course-materials/
+downloads/
+*.pdf
+*.ppt
+*.pptx
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.zip
+*.7z
+*.rar
+*.mp4
+*.mp3
